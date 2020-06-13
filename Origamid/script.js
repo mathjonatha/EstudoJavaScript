@@ -1,104 +1,49 @@
-var nome = 'Matheus',
-    sobrenome = 'Jonatha',
-    idade = 24,
-    cidade = 'Natal',
-    nomeCompleto = nome + ' ' +sobrenome;
+// Objetos
 
-console.log(nome,idade,cidade)
-
-
-var preco = 25;
-var quantidadeComprada = 5;
-var totalPreco = preco * quantidadeComprada;
-
-console.log(totalPreco);
-
-console.log(typeof sobrenome, typeof cidade, typeof idade);
-
-console.log('Meu nome é ' + nome + ' ' + sobrenome + ' ' + 'tenho' + ' ' + idade + ' '+ 'anos e moro em' + ' ' + cidade);
-
-console.log(`Meu nome é ${nomeCompleto} tenho ${idade} anso e moro em ${cidade}`);
-console.log(`Meu nome é ${nome} ${sobrenome} tenho ${idade} anso e moro em ${cidade}`)
-
-
-// Números e Operadores 01
-
-var soma = 10 + 5;
-var subtracao = 10 - 8;
-var multiplicacao = 20 * 2;
-var divisao = 10/5;
-var potencia = 10 ** 2;
-var resto = 15 % 2;
-
-console.log(soma,
-            subtracao,
-            multiplicacao,
-            divisao,
-            potencia,
-            resto,
-            isNaN(resto)
-);
-
-var incremento = 5;
-console.log(incremento);
-console.log(++incremento);
-
-
-// Boleano
-
-var possuiGraduacao = true;
-var possuiDoutorado = false;
-
-if(possuiGraduacao){
-    console.log('Tem graduação');
-} else if(possuiDoutorado) {
-    console.log('Tem doutorado');
-} else {
-    console.log('Não é formado');
+var menu = {
+    width: 800,
+    height: 50,
+    backgroundColor: '#ffffff',
 }
 
 
-var meuNome = nomeCompleto;
+var bg = menu.backgroundColor; // adiciona a uma variavel
 
-switch (meuNome) {
-    case 'Matheus Jonatha':
-        console.log('Correto baby!');
-    break;
-    case 'MatheusJonatha':
-        console.log('Falta pouco, tenta novamente.');
-        break;
-    default:
-        console.log('Errou parceiro.');
+menu.width = 500; // altera um valor no objeto SET
+
+menu.color = '#f3ff22'; // adiciona um nova propriedade ao objego GET
+
+
+var dadosPessoais = {
+    primeiroNome: 'Matheus',
+    segundoNome: 'Jonatha',
+    cidade: 'Natal',
+    idade: 24,
 }
 
-// Funções
-var numero = 5;
+dadosPessoais.primeiroNome = 'Gabriel';
 
-function areaQuadrado(lado){
-    return lado * lado
+dadosPessoais.nomeCompleto = function(){
+    return `${this.primeiroNome} ${this.segundoNome}`;
 }
 
-console.log(areaQuadrado(numero));
 
 
-function meuNomeESobrenome(meuNome){
-    if(meuNome === 'Matheus Jonatha') {
-        return 'Você acertou!';
-    } else {
-        return 'Confira novamente.';
-    }
+cachorro = {
+    raca: 'labrador',
+    cor: 'preto',
+    idade: 10,
+    latir(pessoa){
+      if(pessoa === 'homem'){
+          return 'Latindo';
+      } else if(pessoa === 'mulher'){ 
+            return 'Não latindo';
+      } else {
+          return 'Digite apenas em minusculo, sendo homem ou mulher';
+      }
+    },
 }
 
-console.log(meuNomeESobrenome(nomeCompleto));
+var sub = cachorro.raca = cachorro.raca.replace('or','doremi');
 
-
-addEventListener('click', function(){
-    console.log(meuNomeESobrenome(nomeCompleto));
-})
-
-
-function meuNomeEmFuncao(nome,sobrenome){
-    return `${nome} ${sobrenome}`; 
-}
-
-console.log(meuNomeEmFuncao(nome,sobrenome));
+console.log(sub);
