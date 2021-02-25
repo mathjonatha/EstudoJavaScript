@@ -1,0 +1,24 @@
+{
+  "name": "modulos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch --config dev.webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mthsjonatha/EstudoJavaScript.git"
+  },
+  "author": "Matheus Jonatha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mthsjonatha/EstudoJavaScript/issues"
+  },
+  "homepage": "https://github.com/mthsjonatha/EstudoJavaScript#readme",
+  "devDependencies": {
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0"
+  }
+}
