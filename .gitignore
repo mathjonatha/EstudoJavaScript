@@ -1,6 +1,6 @@
 # Project dependencies
 /estudosAleatorios/.cache
-/estudosAleatorios/node_modules/
+/estudosAleatorios/node_modules
 /estudosAleatorios/yarn-error.log
 /estudosAleatorios/package-lock.json
 
@@ -8,4 +8,3 @@
 /estudosAleatorios/public
 /estudosAleatorios/.DS_Store
 
-/estudosAleatorios/.vscode/

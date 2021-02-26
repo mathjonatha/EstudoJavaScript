@@ -5,6 +5,7 @@
   "main": "js/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./js/**",
     "start": "webpack --watch --config dev.webpack.config.js"
   },
   "repository": {
@@ -18,7 +19,14 @@
   },
   "homepage": "https://github.com/mthsjonatha/EstudoJavaScript#readme",
   "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-plugin-node": "^11.1.0",
     "webpack": "^5.24.2",
     "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "lint": "^0.7.0"
   }
 }
