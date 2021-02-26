@@ -1,10 +1,10 @@
 # Project dependencies
-/estudosAleatorios/.cache
-/estudosAleatorios/node_modules
-/estudosAleatorios/yarn-error.log
-/estudosAleatorios/package-lock.json
+/estudosAleatorios/modulos/.cache
+/estudosAleatorios/modulos/node_modules
+/estudosAleatorios/modulos/yarn-error.log
+/estudosAleatorios/modulos/package-lock.json
 
 # Build directory
-/estudosAleatorios/public
-/estudosAleatorios/.DS_Store
+/estudosAleatorios/modulos/public
+/estudosAleatorios/modulos/.DS_Store
 
