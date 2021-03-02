@@ -1,5 +1,5 @@
 node_modules
 .idea
 coverage
-public
-.DS_Store
+# public
+.DS_Storefff
